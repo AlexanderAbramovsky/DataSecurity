@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dmitriy/University/DataSecurity/Voting/main.cpp
+iostream
+-
+fstream
+-
+time.h
+-
+cstdlib
+-
+stdlib.h
+-
+math.h
+-
+map
+-
+cstdio
+-
+cstring
+-
+iomanip
+-
+string
+-
+string.h
+-
+

@@ -9,7 +9,7 @@ class CardExchanger(var cardsNumber: Int = 52, var playersNumber: Int = 5, var c
     companion object {
         fun cardNameToString(cardNumber: Int): String {
             return when (cardNumber) {
-                0 -> "1"
+                0 -> "A"
                 1 -> "2"
                 2 -> "3"
                 3 -> "4"
@@ -18,11 +18,10 @@ class CardExchanger(var cardsNumber: Int = 52, var playersNumber: Int = 5, var c
                 6 -> "7"
                 7 -> "8"
                 8 -> "9"
-                9 -> "10"
+                9 -> "T"
                 10 -> "J"
                 11 -> "Q"
                 12 -> "K"
-                13 -> "T"
                 else -> cardNumber.toString()
             }
         }
@@ -238,7 +237,7 @@ class CardExchanger(var cardsNumber: Int = 52, var playersNumber: Int = 5, var c
         }
 
         for (i in 0 until cardsNumber) {
-            arrayCards[i] = i + cardsPerSuit
+            arrayCards[i] = i.toLong() + cardsPerSuit
         }
         p = generateP()
         println("P = $p")

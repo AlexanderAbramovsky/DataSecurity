@@ -8,7 +8,6 @@ import kotlinx.coroutines.runBlocking
 class Main {
     companion object{
     }
-
 }
 
 fun main(args: Array<String>) = runBlocking{
